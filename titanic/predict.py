@@ -20,7 +20,7 @@ from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 sys.path.append('../')
 
 # Local imports
-from src.data.type_conversions import sex_type_conversion, embarked_type_conversion
+from titanic.data.type_conversions import sex_type_conversion, embarked_type_conversion
 
 
 def main(args):
