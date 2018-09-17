@@ -1,8 +1,7 @@
 """
 type_conversions.py
---------------------
+-------------------
 This module provides a functions for converting data types.
---------------------
 By: Sebastian D. Goodfellow, Ph.D., 2018
 """
 
