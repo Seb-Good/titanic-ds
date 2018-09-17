@@ -31,7 +31,7 @@ def main(args):
     # Get prediction
     prediction = np.squeeze(model.predict(input_features.values.reshape(1, -1)))
 
-    return 'You died!' if prediction == 1 else 'You Lived!'
+    return 'You Died!' if prediction == 1 else 'You Lived!'
 
 
 def get_parser():
