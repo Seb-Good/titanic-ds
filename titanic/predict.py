@@ -26,7 +26,7 @@ from titanic.data.type_conversions import sex_type_conversion, embarked_type_con
 def main(args):
     """Predict passenger mortality."""
     # Load model
-    model = pickle.load(open(os.path.join(os.getcwd(), 'src', 'models', 'production', 'model.pickle'), 'rb'))
+    model = pickle.load(open(os.path.join(os.getcwd(), 'models', 'production', 'model.pickle'), 'rb'))
 
     # Create input
     input_features = pd.Series({'pclass': args.pclass, 'sex': sex_type_conversion(sex=args.sex), 'age': args.age,
