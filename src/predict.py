@@ -10,10 +10,14 @@ from __future__ import absolute_import, division, print_function
 
 # 3rd party imports
 import os
+import sys
 import pickle
 import numpy as np
 import pandas as pd
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
+
+# Add root path
+sys.path.append('../')
 
 # Local imports
 from src.data.type_conversions import sex_type_conversion, embarked_type_conversion
