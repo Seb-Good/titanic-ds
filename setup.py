@@ -1,5 +1,5 @@
 """Setup for titanic-ds."""
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='titanic-ds',
@@ -10,6 +10,8 @@ setup(
     author_email='sebi.goodfellow@gmail.com',
     license='MIT',
     keywords='machine learning titanic',
-    packages=['titanic'],
-    zip_safe=False
+    package_dir = {'': 'titanic'},
+    packages=find_packages('titanic', exclude=['tests']),
+    zip_safe=False,
+    test_suite='tests',
 )
