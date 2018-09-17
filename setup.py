@@ -25,12 +25,5 @@ setup(
     entry_points={
         'console_scripts': ['titanic-ds = src.predict:main'],
         },
-    install_requires=[],
-    package_data={
-        '': ['*.ipynb'],
-        'req': [
-            'template/template/requirements.txt',
-            'template/template/README.md',
-        ]
-    }
+    install_requires=[]
 )
