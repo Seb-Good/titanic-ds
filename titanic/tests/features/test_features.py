@@ -10,7 +10,7 @@ LOGGER = logging.getLogger(__name__)
 LOGGER.setLevel(logging.INFO)
 
 
-class TestETL(unittest.TestCase):
+class TestFeatureConfig(unittest.TestCase):
     """Simple test example."""
 
     def setUp(self):
